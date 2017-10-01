@@ -10,11 +10,15 @@ class TestEmployee < MiniTest::Test
   end
 
   def test_get_employee_first_name()
-    assert_equal("James", @employee1.get_employee_first_name)
+    assert_equal("Joey", @employee1.get_employee_first_name)
   end
 
   def test_get_employee_last_name()
     assert_equal("Stewart", @employee1.get_employee_last_name)
+  end
+
+  def test_get_employee_full_name()
+    assert_equal("Joey Stewart", @employee1.get_employee_full_name)
   end
 
   def test_get_employee_role()

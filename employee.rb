@@ -2,6 +2,7 @@ class Employee
   def initialize(first_name, last_name, role, salary, hours_per_day, years_at_company, job_performance)
     @first_name = first_name
     @last_name = last_name
+    @full_name = "#{@first_name} #{@last_name}"
     @role = role
     @salary = salary
     @hours_per_day = hours_per_day
@@ -15,6 +16,10 @@ class Employee
 
   def get_employee_last_name()
     return @last_name
+  end
+
+  def get_employee_full_name()
+    return @full_name
   end
 
   def get_employee_role()
