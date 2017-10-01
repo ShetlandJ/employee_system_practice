@@ -9,8 +9,8 @@ class TestCog < MiniTest::Test
     @cog1 = Employee.new("James", "Stewart", "Shelf stacker", 14000.00, 8, 1, 5)
   end
 
-  def get_name()
-    assert_equal("Brian", @cog1.get_name)
+  def test_get_name()
+    assert_equal("James", @cog1.get_employee_first_name())
   end
 
 
