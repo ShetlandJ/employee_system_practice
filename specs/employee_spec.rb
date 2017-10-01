@@ -6,7 +6,7 @@ require_relative("../employee")
 class TestEmployee < MiniTest::Test
 
   def setup()
-    @employee1 = Employee.new("James", "Stewart", "Shelf stacker", 14000.00, 8, 1, 5)
+    @employee1 = Employee.new("Joey", "Stewart", "Shelf stacker", 14000.00, 8, 1, 5)
   end
 
   def test_get_employee_first_name()
