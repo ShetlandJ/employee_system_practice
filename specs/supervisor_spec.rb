@@ -6,7 +6,6 @@ require_relative("../supervisor")
 class TestSupervisor < MiniTest::Test
 
   def setup()
-  @supervisor = Supervisor.new()
     @supervisor1 = Supervisor.new("James", "Stewart", "Shelf stacker", 14000.00, 8, 1, 5)
   end
 
