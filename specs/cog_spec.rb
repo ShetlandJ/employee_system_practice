@@ -12,16 +12,16 @@ class TestCog < MiniTest::Test
 
   # getters
 
-  def test_get_name()
-    assert_equal("James Stewart", @cog1.get_name())
-  end
-
   def test_get_employee_first_name()
     assert_equal("James", @cog1.get_employee_first_name())
   end
 
   def test_get_employee_last_name()
     assert_equal("Stewart", @cog1.get_employee_last_name())
+  end
+
+  def test_get_employee_full_name()
+    assert_equal("James Stewart", @cog1.get_employee_full_name())
   end
 
   def test_get_employee_role()
